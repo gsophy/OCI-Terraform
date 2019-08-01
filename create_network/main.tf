@@ -6,6 +6,9 @@ provider "oci" {
     region = "${var.region}"
 }
 
+provider "tagging" {
+    source = "../tagging"
+}
 module "user" {
     source = "../users"
     user_name = "${var.user_name}"
