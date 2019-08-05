@@ -1,4 +1,4 @@
-resource "oci_identity_tag_namespace" "test_tag_namespace" {
+resource "oci_identity_tag_namespace" "global_tag_namespace" {
     #Required
     compartment_id = "${var.compartment_id}"
     description = "${var.tag_namespace_description}"

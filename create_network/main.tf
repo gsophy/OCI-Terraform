@@ -8,6 +8,8 @@ provider "oci" {
 
 provider "tagging" {
     source = "../tagging"
+    tenancy_ocid = "${var.tenancy_ocid}"
+    
 }
 module "user" {
     source = "../users"
